@@ -10,8 +10,8 @@ source ../common.sh
 echo "compiling .class files..."
 
 javac -d "${OUT_DIR}"/helloworld \
-  src/helloworld/com/github/papayankey/helloworld/HelloWorld.java \
-  src/helloworld/module-info.java
+  helloworld/src/com/github/papayankey/helloworld/HelloWorld.java \
+  helloworld/src/module-info.java
 
 # package
 echo "packaging modular jar..."
